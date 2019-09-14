@@ -89,3 +89,7 @@ h9 {
 .black {
   background-color: black;
 }
+
+#video_title {
+  font-size: 25px;
+}
