@@ -145,15 +145,18 @@ p100{
   color:white;
   font-size:40px;
 }
-
-.button {
-  display: block;
-  width: 115px;
-  height: 25px;
- 
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
+.link-button{
+    border: none;
+    color: rgb(24, 5, 5);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  
 }
+.link-button:hover{
+  color:palevioletred;
+}
+
