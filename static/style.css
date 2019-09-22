@@ -152,38 +152,9 @@ button-1 {
   text-decoration: none;
   display: inline-block;
   padding:8px;
-  border-radius: 8px;
+  border-radius: 10px;
+  top: 10px;
 }
 button-1:hover {
-  background-color: palevioletred;
-}
-button-2 {
-  font-size: 25px;
-
-  color: rgb(255, 255, 255);
-  background-color: rgb(7, 7, 39);
-
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding:8px;
-  border-radius: 8px;
-}
-button-2:hover {
-  background-color: palevioletred;
-}
-button-3 {
-  font-size: 25px;
-
-  color: rgb(255, 255, 255);
-  background-color: rgb(7, 7, 39);
-
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding:8px;
-  border-radius: 8px;
-}
-button-3:hover {
   background-color: palevioletred;
 }
