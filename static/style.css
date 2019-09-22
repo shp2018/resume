@@ -93,3 +93,7 @@ h9 {
 #video_title {
   font-size: 25px;
 }
+
+#scroll {
+  scroll-behavior: smooth;
+}
