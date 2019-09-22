@@ -145,7 +145,7 @@ p100{
   color:white;
   font-size:40px;
 }
-.link-button{
+button-1{
     border: none;
     color: rgb(24, 5, 5);
     padding: 20px;
@@ -156,7 +156,7 @@ p100{
     margin: 4px 2px;
   
 }
-.link-button:hover{
+button-1:hover{
   color:palevioletred;
 }
 
