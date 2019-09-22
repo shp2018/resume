@@ -151,9 +151,9 @@ button-1 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  padding:8px;
+  padding:10px;
   border-radius: 10px;
-  top: 10px;
+  position:relative;
 }
 button-1:hover {
   background-color: palevioletred;
