@@ -92,7 +92,7 @@ h200 {
   font-size: 15px;
 }
 .style {
-  font-size: 70;
+  font-size: 90;
 }
 .black {
   background-color: black;
@@ -158,4 +158,8 @@ button-1 {
 }
 button-1:hover {
   background-color: palevioletred;
+}
+
+.About-Me{
+  background-color: #3e3e3e;
 }
