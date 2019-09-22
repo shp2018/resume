@@ -103,4 +103,21 @@ h200 {
   height: 173.33px;
   vertical-align: middle;
 }
+.col-md-3:hover img{
+filter:blur(2px) brightness(60%);
+box-shadow: 0 0 16px cyan;
+}
+.col-md-3 :not(img){
+  position: absolute;
+  top: 30%;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition:.3s;
 
+}
+.col-md-3:hover :not(img){
+  opacity:1;
+
+}
