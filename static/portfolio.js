@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
   
-  $("a").on('click', function(event) {
+  $("button-1").on('click', function(event) {
 
    
     if (this.hash !== "") {
@@ -21,18 +21,22 @@ $(document).ready(function(){
     } 
 
   })
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
-        $('.scrollToTop').fadeIn();
-    } else {
-        $('.scrollToTop').fadeOut();
-    }
-  });
 
 });
 
 
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+  } else {
+      $('.scrollToTop').fadeOut();
+  }
+});
 
+$('.scrollToTop').click(function(){
+  $('html, body').animate({scrollTop : 0},800);
+  return false;
+});
 
 
 
