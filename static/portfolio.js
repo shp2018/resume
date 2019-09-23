@@ -25,11 +25,11 @@ $(document).ready(function(){
 });
 
 
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 100) {
-      $('.scrollToTop').fadeIn();
+$(window).scroll(function() {
+  if ($(this).scrollTop()) {
+      $('.scrollToTop:hidden').stop(true, true).fadeIn();
   } else {
-      $('.scrollToTop').fadeOut();
+      $('.scrollToTop').stop(true, true).fadeOut();
   }
 });
 
