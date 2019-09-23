@@ -25,39 +25,18 @@ $(document).ready(function(){
 });
 
 
-jQuery(document).ready(function() {
-  
-  var btn = $('#button');
-
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
-
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
-
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+  } else {
+      $('.scrollToTop').fadeOut();
+  }
 });
 
-var btn = $('#button');
-
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
-    }
-  });
-
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
+$('.scrollToTop').click(function(){
+  $('html, body').animate({scrollTop : 0},800);
+  return false;
+});
 
 
 
