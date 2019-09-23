@@ -25,13 +25,28 @@ $(document).ready(function(){
 });
 
 
-$(window).scroll(function() {
-  if ($(this).scrollTop()) {
-      $('.scrollToTop:hidden').stop(true, true).fadeIn();
-  } else {
-      $('.scrollToTop').stop(true, true).fadeOut();
-  }
-});
+function showButton() {
+
+
+  var button  = $('.scrollToTop'), //button that scrolls user to top
+      view = $(window),
+      timeoutKey = -1;
+
+  $(document).on('scroll', function() {
+      if(timeoutKey) {
+          window.clearTimeout(timeoutKey);
+      }
+      timeoutKey = window.setTimeout(function(){
+
+          if (view.scrollTop() < 100) {
+              button.fadeOut();
+          }
+          else {
+              button.fadeIn();
+          }
+      }, 100);
+  });
+}
 
 $('.scrollToTop').click(function(){
   $('html, body').animate({scrollTop : 0},800);
